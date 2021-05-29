@@ -10,7 +10,7 @@ using namespace cv;
 int main(int argc,char **argv)
 {
 
-	Mat img = imread("Resources/img.jpg");
+	Mat img = imread("Resources/dog.jpg");
 
 	imshow("imgWindow", img);
 
