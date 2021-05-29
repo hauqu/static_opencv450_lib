@@ -19,7 +19,7 @@
     <None Include="demo\demo.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="实验2\实验2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

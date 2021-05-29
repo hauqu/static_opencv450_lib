@@ -8,7 +8,7 @@ C++ :[c++](https://en.cppreference.com/w/)<br>
 第三方库链接方式: [静态链接](https://www.bilibili.com/video/BV1vp4y1W7ze?t=975)<br>
 
 ## 使用
-
+使用:[视频演示](https://www.bilibili.com/video/BV1LB4y1u7UQ/)
 1.打开vs2019<br>
 2.在开始使用一栏中选择克隆存储库<br>
 3.输入存储库位置<br>
