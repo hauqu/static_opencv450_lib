@@ -18,6 +18,9 @@ https://github.com/hauqu/static_opencv450_lib.git<br>
 4.保持联网，克隆完成<br>
 5.因为本项目采用静态链接，不需要额外配置opencv 可以直接运行<br>
 6.按下F5 或本地Windos调试器（debug x64）不支持x86，需要的自己配<br>
+	6.1若提示错误，找不到dll 将 dependencies/opencv/bin.zip 解压到
+	static_opencv450_lib\x64\Debug(github不支持超过100mb的文件，所以压缩了一下)
+	<br>
 7.测试用例运行成功，图片显示<br>
 8.在解决方案资源管理器选择显示全部文件，右键文件选择将任意文件包含或者排除项目中
 使得每此只有一个cpp类型文件包含在项目中，分别进行实验1234.<br>
