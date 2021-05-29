@@ -39,6 +39,7 @@ int main()
     OptimSegmentation(covertimage, width, height);
     Mat outimage(height, width, CV_8UC1, covertimage); //一维数组转Mat类
     //cvNamedWindow("图像显示", CV_WINDOW_AUTOSIZE);
+    imwrite("实验4/最优熵.jpg", outimage);
     imshow("output", outimage);
     waitKey(0);
     delete[] covertimage;

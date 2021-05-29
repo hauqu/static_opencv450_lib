@@ -26,10 +26,10 @@ int main()
 	
 	median_filter(img_gray, img_median_filter, TemplateSize::P7_7);
 	average_filter(img_gray, img_average_filter, TemplateSize::P7_7);
-	imwrite("F/imgGray.png", img_gray);
-	imwrite("F/img.png", img);
-	imwrite("F/imgAverageFilter.png",img_average_filter);
-	imwrite("F/imgMedianFilter.png", img_median_filter);
+	imwrite("实验2/imgGray.png", img_gray);
+	imwrite("实验2/img.png", img);
+	imwrite("实验2/imgAverageFilter.png",img_average_filter);
+	imwrite("实验2/imgMedianFilter.png", img_median_filter);
 	imshow("img", img);
 	imshow("imgGray", img_gray);
 	imshow("imgmf", img_median_filter);

@@ -30,9 +30,12 @@ int main()
 	while (true)
 	{
 		int t = Tset;
-
+		
 		threshold_segmentation1(imgGray, img1,t);
-
+		if (t%15==0)
+		{
+			imwrite("สตั้4/t_" + to_string(t) + ".jpg", img1);
+		}
 		imshow("gray", imgGray);
 		imshow("img1", img1);
 		waitKey(100);

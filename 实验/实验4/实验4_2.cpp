@@ -31,6 +31,10 @@ int main()
 
 	//threshold_segmentation_otsu(imgGray, img1, tt);
 	threshold(imgGray, img1, 0, 255, THRESH_OTSU);
+
+	imwrite("实验4/img.jpg", img);
+	imwrite("实验4/imgGray.jpg", imgGray);
+	imwrite("实验4/img_otus.jpg", img1);
 	imshow("gray", imgGray);
 	imshow("img1", img1);
 	waitKey(0);

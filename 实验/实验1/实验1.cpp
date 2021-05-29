@@ -24,6 +24,7 @@ void dilation_histogram_equalization(Mat imgGray);
 
 void showHistogram(Mat img,string window);
 //仅能显示灰度图像的直方图 size [800X600]比较合适
+Mat imgGray, imgDil1, imgDil2;
 int main(int argc,char** argv)
 {
 	string path = "Resources/smile.jpg";
@@ -32,7 +33,7 @@ int main(int argc,char** argv)
 	//读取图片内容
 	//resize(img, img, Size(), 0.1, 0.1);
 
-	Mat imgGray,imgDil1,imgDil2;
+	
 	
 	cvtColor(img, imgGray, COLOR_BGR2GRAY);
 	//原始图像生成灰度图像
@@ -44,19 +45,26 @@ int main(int argc,char** argv)
 	//分度线性化增强，各参数见教材
 	dilation_histogram_equalization(imgDil2);
 	//直方图均衡化增强
+	
 
+
+	imshow("histogram_equalization.jpg", imgDil2);
 	imshow("img", img);
 	imshow("imgGray", imgGray);
 	imshow("piewise_linearization", imgDil1);
 	imshow("histogram_equalization", imgDil2);
 	//显示图像
-
+	imwrite("实验1/img.jpg", img);
+	imwrite("实验1/imgGray.jpg", imgGray);
+	imwrite("实验1/piewise_linearization.jpg", imgDil1);
+	imwrite("实验1/histogram_equalization.jpg", imgDil2);
 	showHistogram(imgDil2, "dil");
 	showHistogram(imgGray, "ori");
 	//显示直方图
 	
 	waitKey(0);
 	//每帧时间 0 为等待按键触发刷新
+	
 	return 0;
 }
 void printImg(Mat& imgGray)

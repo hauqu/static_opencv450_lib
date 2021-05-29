@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="实验1\实验1.cpp" />
+    <ClCompile Include="实验4\实验4_3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="demo\demo.md" />
+    <None Include="实验4\实验4.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
